@@ -11,6 +11,7 @@ const services = {
   entradas: process.env.ENTRADAS_URL,
   credores: process.env.CREDORES_URL,
   saidas: process.env.SAIDAS_URL,
+  finances: process.env.FINANCES_URL
 };
 
 
@@ -28,6 +29,7 @@ app.use('/usuarios', authMiddleware, createProxyMiddleware({
 app.use('/entradas', authMiddleware, createProxyMiddleware({ target: services.entradas + "/entradas", changeOrigin: true }));
 app.use('/credores', authMiddleware, createProxyMiddleware({ target: services.credores + "/credores", changeOrigin: true }));
 app.use('/saidas', authMiddleware, createProxyMiddleware({ target: services.saidas + "/saidas", changeOrigin: true }));
+app.use('/finances', authMiddleware, createProxyMiddleware({ target: services.finances + "/finances", changeOrigin: true }));
 
 
 const PORT = 3000;

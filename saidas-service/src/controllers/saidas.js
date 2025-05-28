@@ -290,7 +290,8 @@ const getSaidasPorUsu = async (req, res) => {
                 total_parcela: saida.total_parcela,
                 parcela_atual: saida.parcela_atual,
                 data_vencimento: saida.data_vencimento.toISOString(),
-                valor: saida.valor
+                valor: saida.valor,
+                gasto_fixo: saida.gasto_fixo
             };
         }));
 
