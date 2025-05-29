@@ -6,7 +6,6 @@ Este repositório contém uma arquitetura baseada em microsserviços com um **AP
 
 ## 📁 Estrutura do Repositório
 
-
 ├── api-gateway/ # Serviço responsável pelo roteamento das requisições para os microsserviços
 
 ├── auth-service/ # Microsserviço de autenticação e gerenciamento de usuários
